@@ -45,7 +45,7 @@ public class TextAdventure
 
   private void enterZone1()
   {
-    console.setImage("veggie.jpg");
+    console.setImage("veggie1.jpg");
     // ADD CODE HERE
     System.out.println("You've entered the veggie section with your mom.. wait, where'd she go?\n That's weird.\n The supermarket is pretty crowded. She must have gone on without you.\n Where will you look?");
     System.out.println("(drinks)\n(snacks)\n(bakery)\n(seafood)\n" + player.getName() + ": ");
@@ -221,7 +221,7 @@ public class TextAdventure
       player.setHealth(0);
     }
     System.out.println("HUNGER: " + player.getHealth());
-    if (player.getHealth()>=85){
+    if (player.getHealth()>=85 || player.getHealth()<100){
       System.out.println("You've entered the bakery section. You're feeling a little hungry.\n It doesn't seem like your mom is around here. Where will you look?");
     }else if(player.getHealth()>=40){
       System.out.println("You've entered the bakery section. You're feeling quite hungry..a pastry would be nice.\nWhat will you do?");
